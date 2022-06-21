@@ -2,7 +2,10 @@ import * as React from "react";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 import Home from "../Home/Home";
-import { BrowserRouter } from "react-router-dom";
+import ProductDetail from "../ProductDetail/ProductDetail";
+import NotFound from "../NotFound/NotFound";
+
+import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 export default function App() {
@@ -11,7 +14,14 @@ export default function App() {
       <BrowserRouter>
         <main>
           {/* YOUR CODE HERE! */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products/:productId" element={<ProductDetail />} />
+            <Route path="*" element={<NotFound />} />
+            {/* <Route component={NotFound} /> */}
+          </Routes>
           <Navbar />
+          {/*<NavLink></NavLink> new new*/}
           <Sidebar />
           <Home />
         </main>
