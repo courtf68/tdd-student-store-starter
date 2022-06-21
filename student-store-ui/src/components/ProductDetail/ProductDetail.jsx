@@ -4,7 +4,7 @@ import "./ProductDetail.css";
 export default function ProductDetail() {
   return (
     <div className="prodDeets">
-      <p>Prod Deets</p>
+      <p>Prod Deets Page</p>
     </div>
   );
 }

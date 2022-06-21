@@ -1,0 +1,12 @@
+.Footer {
+  background-color: #e899db;
+  color: rgb(16, 1, 14);
+  height: 300px;
+  width: 100%;
+}
+.flex1 {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  width: 50%;
+}

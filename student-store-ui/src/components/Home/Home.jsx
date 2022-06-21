@@ -1,10 +1,10 @@
-import * as React from "react"
-import "./Home.css"
+import * as React from "react";
+import "./Home.css";
 
 export default function Home() {
   return (
     <div className="home">
-      <p>Home</p>
+      <p id="homey">Home</p>
     </div>
-  )
+  );
 }
