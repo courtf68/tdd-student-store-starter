@@ -1,0 +1,7 @@
+.prodGrid {
+  height: 750px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 2px solid paleturquoise;
+}

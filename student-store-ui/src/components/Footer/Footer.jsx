@@ -12,9 +12,9 @@ export default function Footer() {
       </div>
       <div className="flex1">
         <p>
-          <b>Categories </b>
+          <b>Company </b>
         </p>
-        <p> All Categories Clothing Food Accessories Tech </p>
+        <p>About Us Find a Store Terms Sitemap Careers</p>
       </div>
     </div>
   );

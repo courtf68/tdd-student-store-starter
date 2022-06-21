@@ -6,6 +6,7 @@ import ProductDetail from "../ProductDetail/ProductDetail";
 import NotFound from "../NotFound/NotFound";
 import ProductCard from "../Home/ProductGrid*/ProductCard*/ProductCard";
 import Footer from "../Footer/Footer";
+import ProductGrid from "../Home/ProductGrid*/ProductGrid";
 
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -17,7 +18,8 @@ export default function App() {
         <main>
           {/* YOUR CODE HERE! */}
           <Navbar />
-          <Sidebar /> {/*location needs to b fixed*/}
+          <Sidebar />
+          {/*location needs to b fixed, abs position in style - sidebar*/}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products/:productId" element={<ProductDetail />} />
@@ -26,6 +28,7 @@ export default function App() {
           </Routes>
           {/*<NavLink></NavLink> new new*/}
           {/* <Home /> */}
+          <ProductGrid />
           <ProductCard />
           <Footer />
         </main>
