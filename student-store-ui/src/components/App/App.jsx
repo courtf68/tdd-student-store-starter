@@ -14,13 +14,14 @@ export default function App() {
       <BrowserRouter>
         <main>
           {/* YOUR CODE HERE! */}
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products/:productId" element={<ProductDetail />} />
             <Route path="*" element={<NotFound />} />
             {/* <Route component={NotFound} /> */}
           </Routes>
-          <Navbar />
+
           {/*<NavLink></NavLink> new new*/}
           <Sidebar />
           <Home />
