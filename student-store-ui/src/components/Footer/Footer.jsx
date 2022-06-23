@@ -16,6 +16,7 @@ export default function Footer() {
         </p>
         <p>About Us Find a Store Terms Sitemap Careers</p>
       </div>
+      <hr></hr>
     </div>
   );
 }

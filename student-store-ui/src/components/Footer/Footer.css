@@ -3,12 +3,15 @@
   color: rgb(16, 1, 14);
   height: 300px;
   width: 100%;
+  margin-left: 59px;
 }
 .flex1 {
   display: flex;
   flex-direction: column;
   padding: 4px;
-  width: 50%;
+  padding-left: 22px;
+
+  /* width: 50%; */
 }
 
 /* for columns: https://www.geeksforgeeks.org/how-to-define-two-column-layout-using-flexbox/ */
