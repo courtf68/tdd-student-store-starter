@@ -4,9 +4,9 @@ import Sidebar from "../Sidebar/Sidebar";
 import Home from "../Home/Home";
 import ProductDetail from "../ProductDetail/ProductDetail";
 import NotFound from "../NotFound/NotFound";
-import ProductCard from "../Home/ProductGrid*/ProductCard*/ProductCard";
+import ProductCard from "../Home/ProductGrid/ProductCard/ProductCard";
 import Footer from "../Footer/Footer";
-import ProductGrid from "../Home/ProductGrid*/ProductGrid";
+import ProductGrid from "../Home/ProductGrid/ProductGrid";
 import axios from "axios";
 
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
@@ -30,6 +30,7 @@ export default function App() {
         console.log(error);
       });
   }
+  // filter by cat for each select
   React.useEffect(() => {
     fetchy();
   }, []);
