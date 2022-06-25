@@ -1,7 +1,7 @@
-.prodCard {
-  height: 250px;
-  width: 250px;
+.product-card {
+  /* height: 250px;
+  width: 250px; */
   border: 2px solid cadetblue;
-  padding: 50px;
-  margin-left: 60px;
+  /* padding: 50px;
+  margin-left: 60px; */
 }

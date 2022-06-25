@@ -1,18 +1,15 @@
 // container
 import * as React from "react";
 import "./ProductGrid.css";
+import ProductCard from "./ProductCard/ProductCard";
 
 export default function ProductGrid({
   products,
   handleAddItemToCart,
   handleRemoveItemToCart,
 }) {
-  // React.useEffect(() => {
-  //   console.log (products);
-  // });
-
   return (
-    <div className="prodGrid">
+    <div className="product-grid">
       {products.map((item) => {
         return (
           <ProductCard

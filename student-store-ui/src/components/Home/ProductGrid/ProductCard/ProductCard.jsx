@@ -10,14 +10,17 @@ export default function ProductCard({
   showDescription,
 }) {
   return (
-    <div className="prodCard">
-      <div className="product-name"> {product.name} </div>
+    <div className="product-card">
       <p>title here</p>
+      <div className="product-name"> {product.name} </div>
+
       <div className="product-description"> </div>
       <div className="product-price"> ${product.price}</div>
-      {/* how to do int dig here*/}
+      {/*figure out how to do int dig here*/}
       <img src></img>
+      {/* if showDescription = true do ... here */}
 
+      <div className="media">{/* <img src="" alt="" /> */}</div>
       <button className="add"></button>
 
       <button className="remove"> {productId}</button>

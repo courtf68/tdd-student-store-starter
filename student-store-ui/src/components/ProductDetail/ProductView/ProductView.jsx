@@ -11,16 +11,16 @@ export default function ProductView({
   handleRemoveItemToCart,
 }) {
   return (
-    <div className="product">
+    <div className="product-view">
       <h1 className="product-id">Product # {productId}</h1>
 
       <ProductCard
-      // showDescription={true}
-      // product={product}
-      // productId={productId}
-      // quantity={quantity}
-      // handleAddItemToCart={handleAddItemToCart}
-      // handleRemoveItemFromCart={handleRemoveItemToCart}
+        showDescription={true}
+        product={product}
+        productId={productId}
+        quantity={quantity}
+        handleAddItemToCart={handleAddItemToCart}
+        handleRemoveItemFromCart={handleRemoveItemToCart}
       />
       {/* nothing here rn tho */}
     </div>

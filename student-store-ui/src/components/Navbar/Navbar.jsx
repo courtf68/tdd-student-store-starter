@@ -10,6 +10,7 @@ export default function Navbar() {
       <p>CodePath Org</p>
       <li>
         <Link to="/">Home</Link>
+        {/* see how links are done//check */}
       </li>
       <li>
         <a href="#homey">About Us</a>
