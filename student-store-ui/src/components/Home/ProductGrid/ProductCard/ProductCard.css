@@ -2,13 +2,16 @@
   /* height: 250px;
   width: 250px; */
   border: 2px solid cadetblue;
-  /* padding: 50px;
-  margin-left: 60px; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin-left: 60px;
 }
 .product-card img {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 200px;
+  height: 200px;
 }
 
 .product-name {

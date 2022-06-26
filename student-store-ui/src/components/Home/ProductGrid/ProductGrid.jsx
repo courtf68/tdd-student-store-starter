@@ -11,12 +11,12 @@ export default function ProductGrid({
 }) {
   return (
     <div className="ProductGrid">
-      {products.map((item, i) => {
+      {products.map((prod, i) => {
         return (
           <ProductCard
-            key={i}
-            product={item}
+            product={prod}
             productID={i}
+            key={i}
             handleAddItemToCart={handleAddItemToCart}
             handleRemoveItemFromCart={handleRemoveItemToCart}
             showDescription="false"

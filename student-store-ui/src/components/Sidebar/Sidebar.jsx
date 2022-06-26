@@ -21,7 +21,7 @@ export default function Sidebar({
           handleOnToggle(isOpen);
         }}
       >
-        close
+        open
       </button>
       {/* call onopen prop n toggle here  + display sum*/}
       {/* when closed have right params  */}
