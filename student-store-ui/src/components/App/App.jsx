@@ -15,8 +15,9 @@ import "./App.css";
 export default function App() {
   const url = `https://codepath-store-api.herokuapp.com/store`;
   const [products, setProducts] = React.useState([]); //attempt at state vari
-  // const isFetching = false; //FIX
-  // const error = "error happened"; //something wrong w api req
+  const [isFetching, setisFetching] = React.useState(false);
+  const [error, setError] = React.useState("");
+  const [shoppingCart, setshoppingCart] = React.useState([]);
 
   function fetchy() {
     axios
@@ -40,20 +41,28 @@ export default function App() {
       <BrowserRouter>
         <main>
           {/* YOUR CODE HERE! */}
-          <Navbar />
-          <Sidebar />
+
           {/*location needs to b fixed, abs position in style - sidebar*/}
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route
+              path="/"
+              element={
+                <Home
+                  products={products}
+                  // handleAddItemToCart={handleAddItemToCart}
+                  // handleRemoveItemToCart={handleRemoveItemToCart}
+                  setProducts={setProducts}
+                />
+              }
+            />
             <Route path="/products/:productId" element={<ProductDetail />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           {/*<NavLink></NavLink> new new*/}
           {/* <Home /> */}
-          <ProductGrid />
+          {/* <ProductGrid /> */}
           {/* fetch prod here */}
-          <ProductCard />
-          <Footer />
+          {/* <ProductCard /> */}
         </main>
       </BrowserRouter>
     </div>

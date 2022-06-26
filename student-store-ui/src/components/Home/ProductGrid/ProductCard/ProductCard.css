@@ -5,3 +5,12 @@
   /* padding: 50px;
   margin-left: 60px; */
 }
+.product-card img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product-name {
+  text-align: center;
+}

@@ -7,6 +7,7 @@ FIX
 - Navbar
   - links for logo
 - Prod Card - hellas
+- side
 
 I think "done"
 
@@ -17,8 +18,11 @@ I think "done"
 
 could add CSS
 
-TD
-
+- Sidebar
+- NAV
+  TD
+- shop cart, like how
+- shop form
 - Prod deets
 
 - APP jsx
