@@ -4,7 +4,14 @@ import "./Hero.css";
 export default function Hero() {
   return (
     <div className="hero">
-      <p className="intro"> Welcome! </p>
+      <div className="intro">
+        <h1>Welcome!</h1>
+        <h2> Find Your Merch!</h2>
+        <p>
+          We have all kinds of goodies. Click on any of the items to start
+          filling up your shopping cart. Checkout whenever you're ready
+        </p>
+      </div>
 
       <img
         id="hero-img"

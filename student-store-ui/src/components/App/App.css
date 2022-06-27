@@ -5,6 +5,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: row;
+  /* margin-left: 60px; */
 }
 
 .app main {
@@ -14,4 +15,5 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* margin-left: 60px; */
 }

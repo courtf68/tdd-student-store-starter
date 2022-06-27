@@ -2,6 +2,7 @@ import * as React from "react";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 import Home from "../Home/Home";
+
 import ProductDetail from "../ProductDetail/ProductDetail";
 import NotFound from "../NotFound/NotFound";
 import ProductCard from "../Home/ProductGrid/ProductCard/ProductCard";
@@ -16,6 +17,7 @@ export default function App() {
   const url = `https://codepath-store-api.herokuapp.com/store`;
   const [products, setProducts] = React.useState([]); //attempt at state vari
   const [isFetching, setisFetching] = React.useState(false);
+  const [isOpen, setisOpen] = React.useState(false);
   const [error, setError] = React.useState("");
   const [shoppingCart, setshoppingCart] = React.useState([]);
 
@@ -50,12 +52,20 @@ export default function App() {
                 <Home
                   products={products}
                   // handleAddItemToCart={handleAddItemToCart}
-                  // handleRemoveItemToCart={handleRemoveItemToCart}
+                  //handleRemoveItemFromCart={handleRemoveItemToCart}
                   setProducts={setProducts}
                 />
               }
             />
-            <Route path="/products/:productId" element={<ProductDetail />} />
+            <Route
+              path="/products/:productId"
+              element={
+                <ProductDetail
+                // handleAddItemToCart={handleAddItemToCart}
+                //handleRemoveItemFromCart={handleRemoveItemToCart}
+                />
+              }
+            />
             <Route path="*" element={<NotFound />} />
           </Routes>
           {/*<NavLink></NavLink> new new*/}
