@@ -10,16 +10,21 @@ import axios from "axios";
 export default function Home({
   products,
   handleAddItemToCart,
-  handleRemoveItemToCart,
+  handleRemoveItemFromCart,
+  isOpen,
 }) {
   return (
     <div className="home">
       <Navbar />
       <Sidebar />
-      <p id="homey">Home</p>
       {/* hero too */}
       <Hero></Hero>
-      <ProductGrid products={products} />
+
+      <ProductGrid
+        products={products}
+        handleAddItemToCart={handleAddItemToCart}
+        handleRemoveItemFromCart={handleRemoveItemFromCart}
+      />
       <Footer />
     </div>
   );

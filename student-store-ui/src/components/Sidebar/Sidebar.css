@@ -3,8 +3,17 @@
   width: 60px;
   background-color: rgb(195, 174, 240);
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   left: 0;
+  overflow-x: hidden;
+  top: 0;
+}
+/* no scroll */
+.close {
+  height: 1200px;
+  width: 60px;
+  position: fixed;
+  background-color: rgb(195, 174, 240);
   overflow-x: hidden;
   top: 0;
 }

@@ -9,18 +9,13 @@ export default function Sidebar({
   checkoutForm,
   handleOnCheckoutFormChange,
   handleOnSubmitCheckoutForm,
-  handleOnToggle,
+  handleOnToggle = () => {},
 }) {
-  console.log("side workss");
+  // console.log("side workss");
   return (
-    <section className="sidebar">
+    <section className={isOpen ? "sidebar" : "close"}>
       <p>Sidebar</p>
-      <button
-        className="toggle-button"
-        onClick={() => {
-          handleOnToggle(isOpen);
-        }}
-      >
+      <button className="toggle-button" onClick={handleOnToggle}>
         open
       </button>
       {/* call onopen prop n toggle here  + display sum*/}

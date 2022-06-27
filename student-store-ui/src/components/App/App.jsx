@@ -38,6 +38,13 @@ export default function App() {
     fetchy();
   }, []);
 
+  function handleOnToggle() {
+    if (isOpen) {
+      setisOpen(false);
+    } else if (isOpen == false) {
+      setisOpen(true);
+    }
+  }
   return (
     <div className="app">
       <BrowserRouter>
@@ -54,6 +61,8 @@ export default function App() {
                   // handleAddItemToCart={handleAddItemToCart}
                   //handleRemoveItemFromCart={handleRemoveItemToCart}
                   setProducts={setProducts}
+                  isOpen={isOpen}
+                  handleOnToggle={handleOnToggle}
                 />
               }
             />

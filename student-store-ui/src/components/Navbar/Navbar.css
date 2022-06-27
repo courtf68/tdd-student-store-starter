@@ -12,4 +12,9 @@ li {
   overflow: hidden;
   display: inline;
   padding: 10px;
+  margin-left: 62px;
+}
+
+.navbar p {
+  margin-left: 62px;
 }
