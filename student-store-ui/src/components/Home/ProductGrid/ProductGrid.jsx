@@ -10,7 +10,7 @@ export default function ProductGrid({
   handleRemoveItemToCart,
 }) {
   return (
-    <div className="ProductGrid">
+    <div className="product-grid">
       {products.map((prod, i) => {
         return (
           <ProductCard

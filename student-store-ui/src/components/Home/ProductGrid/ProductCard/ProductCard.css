@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   padding: 20px;
   margin-left: 60px;
+  flex-direction: column;
 }
 .product-card img {
   display: flex;
@@ -15,5 +16,20 @@
 }
 
 .product-name {
+  text-align: center;
+}
+
+.add,
+.remove {
+  height: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  align-items: center;
+  width: 25px;
+}
+.remove {
+  margin-top: 0;
+}
+.product-quantity {
   text-align: center;
 }

@@ -1,6 +1,6 @@
-.sidebar {
+.open {
   height: 1200px;
-  width: 60px;
+  width: 200px;
   background-color: rgb(195, 174, 240);
   position: -webkit-sticky;
   position: fixed;
@@ -14,6 +14,7 @@
   width: 60px;
   position: fixed;
   background-color: rgb(195, 174, 240);
+
   overflow-x: hidden;
   top: 0;
 }

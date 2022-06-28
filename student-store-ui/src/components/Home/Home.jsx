@@ -11,19 +11,33 @@ export default function Home({
   products,
   handleAddItemToCart,
   handleRemoveItemFromCart,
+  handleOnToggle,
   isOpen,
 }) {
+  const [searchTerm, setSearchTerm] = React.useState("");
   return (
     <div className="home">
       <Navbar />
-      <Sidebar />
+      <Sidebar isOpen={isOpen} handleOnToggle={handleOnToggle} />
       {/* hero too */}
       <Hero></Hero>
-
+      <div id="searchbar">
+        <input
+          type="text"
+          id="search-input"
+          name="search-term"
+          placeholder="search"
+          onChange={(ev) => {
+            setSearchTerm(ev.target.value);
+          }}
+        />
+        <button id="submit">search</button>
+      </div>
       <ProductGrid
         products={products}
         handleAddItemToCart={handleAddItemToCart}
         handleRemoveItemFromCart={handleRemoveItemFromCart}
+        searchTerm={searchTerm}
       />
       <Footer />
     </div>

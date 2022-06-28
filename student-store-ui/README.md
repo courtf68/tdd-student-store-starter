@@ -20,9 +20,13 @@ could add CSS
 
 - Sidebar
 - NAV
-  TD
+
+TD
+
 - shop cart, like how
 - shop form
 - Prod deets
 
 - APP jsx
+
+1. search bar

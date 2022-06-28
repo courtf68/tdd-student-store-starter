@@ -1,40 +1,44 @@
 import * as React from "react";
 import "./ProductCard.css";
 import { Link } from "react-router-dom";
-import Logo from "../../../Navbar/Logo/Logo";
 
 export default function ProductCard({
   product,
   productId,
-  quantity,
   handleAddItemToCart,
   handleRemoveItemFromCart,
   showDescription,
 }) {
+  const [quantity, setquant] = React.useState(0);
+
+  function handleAddItemToCart() {
+    setquant(quantity + 1);
+  }
+  function handleRemoveItemFromCart() {
+    setquant(quantity - 1);
+    if (quantity < 1) {
+      setquant(0); //keeps above 0
+    }
+  }
   return (
     <div className="product-card">
-      <p>title here</p>
       <Link to={`/products/${productId}`} className="media">
         <img className="productImage" src={product.image}></img>
       </Link>
       <div className="product-name"> {product.name} </div>
-
       <div className="product-description"> </div>
+      &#9733; &#9733; &#9733; &#9733; &#9734;
       <div className="product-price"> ${product.price}</div>
       {/*figure out how to do int dig here*/}
-
       {/* if showDescription = true do ... here */}
-
       {/* <div className="media"></div> */}
-
-      <button className="add" onClick={productId}>
+      <button className="add" onClick={handleAddItemToCart}>
         +
       </button>
-      <button className="remove" onClick={productId}>
+      <div className="product-quantity">{quantity}</div>
+      <button className="remove" onClick={handleRemoveItemFromCart}>
         -
       </button>
-
-      <div className="product-quantity">{quantity}</div>
       {/* if blank here */}
     </div>
   );

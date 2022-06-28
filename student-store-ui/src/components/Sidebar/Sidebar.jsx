@@ -13,11 +13,16 @@ export default function Sidebar({
 }) {
   // console.log("side workss");
   return (
-    <section className={isOpen ? "sidebar" : "close"}>
+    <section className={isOpen ? "open" : "close"}>
       <p>Sidebar</p>
       <button className="toggle-button" onClick={handleOnToggle}>
-        open
+        click
       </button>
+      <div className="cart">
+        <a href="">
+          Cart<i className="material-icons">shopping_cart</i>
+        </a>
+      </div>
       {/* call onopen prop n toggle here  + display sum*/}
       {/* when closed have right params  */}
     </section>

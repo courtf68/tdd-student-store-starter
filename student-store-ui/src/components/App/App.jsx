@@ -45,6 +45,15 @@ export default function App() {
       setisOpen(true);
     }
   }
+
+  function handleAddItemToCart() {
+    console.log("add");
+  }
+
+  function handleRemoveItemFromCart() {
+    console.log("remove");
+  }
+
   return (
     <div className="app">
       <BrowserRouter>
@@ -58,8 +67,8 @@ export default function App() {
               element={
                 <Home
                   products={products}
-                  // handleAddItemToCart={handleAddItemToCart}
-                  //handleRemoveItemFromCart={handleRemoveItemToCart}
+                  handleAddItemToCart={handleAddItemToCart}
+                  handleRemoveItemFromCart={handleRemoveItemFromCart}
                   setProducts={setProducts}
                   isOpen={isOpen}
                   handleOnToggle={handleOnToggle}
@@ -70,8 +79,8 @@ export default function App() {
               path="/products/:productId"
               element={
                 <ProductDetail
-                // handleAddItemToCart={handleAddItemToCart}
-                //handleRemoveItemFromCart={handleRemoveItemToCart}
+                  handleAddItemToCart={handleAddItemToCart}
+                  handleRemoveItemFromCart={handleRemoveItemFromCart}
                 />
               }
             />
