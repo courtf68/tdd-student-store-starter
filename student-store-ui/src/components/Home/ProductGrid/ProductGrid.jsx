@@ -12,10 +12,11 @@ export default function ProductGrid({
   return (
     <div className="product-grid">
       {products.map((prod, i) => {
+        // can try using prod names
         return (
           <ProductCard
             product={prod}
-            productID={i}
+            productId={i}
             key={i}
             handleAddItemToCart={handleAddItemToCart}
             handleRemoveItemFromCart={handleRemoveItemToCart}

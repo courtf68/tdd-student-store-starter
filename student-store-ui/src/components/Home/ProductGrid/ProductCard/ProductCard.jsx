@@ -20,13 +20,17 @@ export default function ProductCard({
       setquant(0); //keeps above 0
     }
   }
+  let newId = parseInt(productId) + 1;
   return (
     <div className="product-card">
-      <Link to={`/products/${productId}`} className="media">
+      <Link
+        to={`/products/${newId}`}
+        // wrong ^
+      >
         <img className="productImage" src={product.image}></img>
       </Link>
       <div className="product-name"> {product.name} </div>
-      <div className="product-description"> </div>
+      <div className="product-description"></div>
       &#9733; &#9733; &#9733; &#9733; &#9734;
       <div className="product-price"> ${product.price}</div>
       {/*figure out how to do int dig here*/}

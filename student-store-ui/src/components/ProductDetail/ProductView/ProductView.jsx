@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./ProductView.css";
 
-import ProductCard from "/src/components/ProductCard/ProductCard";
+import ProductCard from "../../Home/ProductGrid/ProductCard/ProductCard";
 
 export default function ProductView({
   product,
@@ -12,7 +12,7 @@ export default function ProductView({
 }) {
   return (
     <div className="product-view">
-      <h1 className="product-id">Product # {productId}</h1>
+      <h1 className="product-id">Product # {product.name}</h1>
 
       <ProductCard
         showDescription={true}
