@@ -4,7 +4,12 @@ import { useParams } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 
-export default function ProductDetail({}) {
+export default function ProductDetail({
+  handleAddItemtoCart,
+  handleRemoveItemToCart,
+}) {
+  const [product, setProduct] = React.useState("");
+
   return (
     <div className="prodDeets">
       {/* fetch prod by id // use params */}

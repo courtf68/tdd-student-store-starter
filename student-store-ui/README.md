@@ -30,3 +30,4 @@ TD
 - APP jsx
 
 1. search bar
+2. prod details
