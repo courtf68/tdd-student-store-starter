@@ -3,7 +3,7 @@
   color: rgb(16, 1, 14);
   height: 200px;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0px;
   font-size: smaller;
 }

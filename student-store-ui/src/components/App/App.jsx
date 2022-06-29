@@ -16,7 +16,7 @@ import "./App.css";
 export default function App() {
   const url = `https://codepath-store-api.herokuapp.com/store`;
   const [products, setProducts] = React.useState([]); //attempt at state vari
-  const [isFetching, setisFetching] = React.useState(false);
+
   const [isOpen, setisOpen] = React.useState(false);
   const [error, setError] = React.useState("");
   const [shoppingCart, setshoppingCart] = React.useState([]);

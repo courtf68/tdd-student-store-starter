@@ -13,7 +13,7 @@ export default function Navbar() {
         {/* see how links are done//check */}
       </li>
       <li>
-        <a href="#homey">About Us</a>
+        <a href="#about">About Us</a>
       </li>
       <li>
         <a href="#bottom">Contact Us</a>

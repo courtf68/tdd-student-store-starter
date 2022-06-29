@@ -2,6 +2,7 @@
   /* height: 250px;
   width: 250px; */
   border: 2px solid rgb(162, 239, 241);
+  border-radius: 12%;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
@@ -13,6 +14,7 @@
   flex-wrap: wrap;
   width: 200px;
   height: 200px;
+  border-radius: 100%;
 }
 
 .product-name {

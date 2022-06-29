@@ -10,5 +10,5 @@ export default function shoppingCart({
   handleAddItemToCart,
   handleRemoveItemToCart,
 }) {
-  return <p></p>;
+  return <p> text </p>;
 }

@@ -18,13 +18,12 @@ export default function Sidebar({
       <button className="toggle-button" onClick={handleOnToggle}>
         click
       </button>
+      {/* <shoppingCart shoppingCart={shoppingCart} /> */}
       <div className="cart">
         <a href="">
           Cart<i className="material-icons">shopping_cart</i>
         </a>
       </div>
-      {/* call onopen prop n toggle here  + display sum*/}
-      {/* when closed have right params  */}
     </section>
   );
 }

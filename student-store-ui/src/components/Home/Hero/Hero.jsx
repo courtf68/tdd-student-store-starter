@@ -11,6 +11,7 @@ export default function Hero() {
           We have all kinds of goodies. Click on any of the items to start
           filling up your shopping cart. Checkout whenever you're ready
         </p>
+        <p className="small"> If products dont appear, click cart icon</p>
       </div>
 
       <img

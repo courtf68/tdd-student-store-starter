@@ -14,8 +14,33 @@
   margin-left: 812px;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 90%;
+  border: solid 1px #ce7bee;
+  padding: 10px;
 }
-
+#submit {
+  border-radius: 90%;
+}
+.about {
+  margin-left: 140px;
+  background-color: aliceblue;
+  margin-right: 80px;
+  margin-top: 1450px;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+  padding: 10px;
+}
+.content {
+  margin-left: 140px;
+  background-color: rgb(242, 255, 240);
+  margin-right: 80px;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+  padding: 10px;
+}
+.about h3 {
+  text-align: center;
+}
 .cats {
   margin-left: 150px;
   padding: 10px;

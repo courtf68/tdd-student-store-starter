@@ -15,3 +15,7 @@ img {
   float: right;
   height: 100px;
 }
+
+.small {
+  font-size: 9px;
+}

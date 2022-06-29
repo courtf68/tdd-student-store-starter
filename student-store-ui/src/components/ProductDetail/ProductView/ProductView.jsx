@@ -12,7 +12,7 @@ export default function ProductView({
 }) {
   return (
     <div className="product-view">
-      <h1 className="product-id">Product # {product.name}</h1>
+      <h1 className="product-id">Product: {product.name}</h1>
 
       <ProductCard
         showDescription={true}
