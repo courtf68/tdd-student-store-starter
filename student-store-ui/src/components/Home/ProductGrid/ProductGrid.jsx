@@ -12,7 +12,7 @@ export default function ProductGrid({
   return (
     <div className="product-grid">
       {products.map((prod, i) => {
-        // can try using prod names
+        // can try using prod names , put in other components, YT
         return (
           <ProductCard
             product={prod}
