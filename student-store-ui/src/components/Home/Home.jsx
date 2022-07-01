@@ -5,6 +5,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import ProductGrid from "../Home/ProductGrid/ProductGrid";
 import Hero from "./Hero/Hero";
 import Footer from "../Footer/Footer";
+import shoppingCart from "../Sidebar/ShoppingCart/ShoppingCart";
 import axios from "axios";
 
 export default function Home({
@@ -14,6 +15,8 @@ export default function Home({
   handleRemoveItemFromCart,
   handleOnToggle,
   isOpen,
+  setShoppingCart,
+  shoppingCart,
 }) {
   const [searchTerm, setSearchTerm] = React.useState("");
   const [filterRes, setFilterRes] = React.useState([]);
@@ -77,6 +80,8 @@ export default function Home({
         handleAddItemToCart={handleAddItemToCart}
         handleRemoveItemFromCart={handleRemoveItemFromCart}
         searchTerm={searchTerm}
+        setShoppingCart={setShoppingCart}
+        shoppingCart={shoppingCart}
       />
       <div className="about" id="about">
         <h3>About</h3>

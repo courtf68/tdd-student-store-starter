@@ -9,6 +9,7 @@ import ProductCard from "../Home/ProductGrid/ProductCard/ProductCard";
 import Footer from "../Footer/Footer";
 import ProductGrid from "../Home/ProductGrid/ProductGrid";
 import axios from "axios";
+import shoppingCart from "../Sidebar/ShoppingCart/ShoppingCart";
 
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -72,6 +73,8 @@ export default function App() {
                   setProducts={setProducts}
                   isOpen={isOpen}
                   handleOnToggle={handleOnToggle}
+                  setShoppingCart={setshoppingCart}
+                  shoppingCart={shoppingCart}
                 />
               }
             />

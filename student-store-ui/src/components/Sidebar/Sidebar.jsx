@@ -20,13 +20,22 @@ export default function Sidebar({
   //showing div w shopping cart info, then destruct. ret j has div if it exists.
 
   // console.log("side workss");
+  const cart = isOpen ? (
+    <shoppingCart
+      shoppingCart={shoppingCart}
+      isOpen={isOpen}
+      products={products}
+    />
+  ) : (
+    ""
+  );
   return (
     <section className={isOpen ? "sidebar-open sidebar" : "sidebar"}>
       <p>Sidebar</p>
       <button className="toggle-button" onClick={handleOnToggle}>
         click
       </button>
-      {/* <shoppingCart shoppingCart={shoppingCart} /> */}
+
       <div className="cart">
         <a href="">
           Cart<i className="material-icons">shopping_cart</i>
