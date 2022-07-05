@@ -5,7 +5,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import ProductGrid from "../Home/ProductGrid/ProductGrid";
 import Hero from "./Hero/Hero";
 import Footer from "../Footer/Footer";
-import shoppingCart from "../Sidebar/ShoppingCart/ShoppingCart";
+import ShoppingCart from "../ShoppingCart";
 import axios from "axios";
 
 export default function Home({
@@ -41,7 +41,12 @@ export default function Home({
   return (
     <div className="home">
       <Navbar />
-      <Sidebar isOpen={isOpen} handleOnToggle={handleOnToggle} />
+      <Sidebar
+        isOpen={isOpen}
+        handleOnToggle={handleOnToggle}
+        products={products}
+        shoppingCart={shoppingCart}
+      />
       {/* hero too */}
       <Hero></Hero>
       <div id="searchbar">

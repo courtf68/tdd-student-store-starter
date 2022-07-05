@@ -1,5 +1,5 @@
 //storage.js
-const { storage } = require("../data/storage");
+const { storage } = require("../data/storage.js");
 //when / call another function
 
 class Store {

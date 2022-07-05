@@ -1,7 +1,7 @@
 import * as React from "react";
 // import "./ProductView.css";
 
-import ProductCard from "../../Home/ProductGrid/ProductCard/ProductCard";
+// import ProductCard from "../../Home/ProductGrid/ProductCard/ProductCard";
 
 //send is open as props to shopping cart and checkout form comp.
 // export default function shoppingCart({
@@ -33,7 +33,7 @@ import ProductCard from "../../Home/ProductGrid/ProductCard/ProductCard";
 
 // }
 
-export default function shoppingCart({
+export default function ShoppingCart({
   isOpen,
   products,
   quantity,
@@ -48,7 +48,7 @@ export default function shoppingCart({
           <div className="cart-info">
             <h1 className="cart-product-name">
               product name
-              {products[item.productID].name}
+              {/* {products[item.productID].name} */}
             </h1>
             <h2 className="cart-product-quantity">
               {products[item.productID].quantity}
