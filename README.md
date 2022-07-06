@@ -6,8 +6,6 @@ Selling merchandise in the modern era requires digital solutions. For this proje
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/70083253/176349256-fcea3a48-fa77-46db-aaf3-b82c07cd4b8a.gif)
 
-
-
 ### Application Features
 
 #### Core Features
@@ -245,19 +243,19 @@ The following specifications were met on the Express backend and the React front
 
 **Server** - Create an Express server
 
-- [ ] Wire up the appropriate middleware and error handlers in the `app.js` file
-- [ ] Create a single `GET` request handler at the `/` endpoint. It should respond to all `GET` requests with a JSON object and a `200` status code. The JSON response should contain a single key of `ping` that stores the string value: `pong`. For example: `{ "ping": "pong" }`.
-- [ ] Have a `server.js` file that starts the app by listening on port `3001`.
+- [x ] Wire up the appropriate middleware and error handlers in the `app.js` file
+- [ x] Create a single `GET` request handler at the `/` endpoint. It should respond to all `GET` requests with a JSON object and a `200` status code. The JSON response should contain a single key of `ping` that stores the string value: `pong`. For example: `{ "ping": "pong" }`.
+- [ x] Have a `server.js` file that starts the app by listening on port `3001`.
 
 **Models** - The API should use a `Store` model that handles the following
 
-- [ ] List all products currently in the `db.json` file
-- [ ] Fetch a single product by its id
+- [ x] List all products currently in the `db.json` file
+- [ x] Fetch a single product by its id
 - [ ] Create a purchase order
 
 **Routes** - The API should contain a route mounted at the `/store` endpoint
 
-- [ ] It should respond to `GET` requests to `/store` with an array of all products in the store in this format: `{ "products": products }`
+- [ x] It should respond to `GET` requests to `/store` with an array of all products in the store in this format: `{ "products": products }`
 - [ ] It should respond to `GET` requests to `/store/:productId` with a single product based on the product's id using this JSON format: `{ "product": product }`
 - [ ] It should allow `POST` requests to the `/store` endpoint:
   - [ ] The endpoint should create purchase orders for users and save them to the `db.json` file
@@ -307,3 +305,6 @@ I did not demo this week. I liked the gradient and styling some of my peers did.
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+
+for Proj 3:
+I was not able to complete. I would've liked to connect my front and backend but I was struggling learning from home with covid.

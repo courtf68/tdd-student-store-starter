@@ -6,12 +6,18 @@ const storeM = require("../models/store");
 router.get("/", async (req, res) => {
   //   res.status(200);
   res.send("hello from store"); //send is shortcut for res json
-  const dbProds = storeM.getProds(); //
-  res.json(dbProds);
-  res.send(dbProds);
-  console.log("products here^");
+  const dbProds = await storeM.getProds(); //
+  //   res.json(dbProds);
+  //   res.send(dbProds);
+  console.log(dbProds, "products here^");
+  res.status(200).send(dbProds);
 });
 
-router.get("/:productId", (req, res) => {});
-router.post("/", (req, res) => {});
+router.get("/:productId", async (req, res) => {
+  const idProd = req.params.productId;
+  const eachh = await storeM.getProdById(idProd);
+  res.status(200).send(eachh);
+});
+router.post("/receipt", async (req, res) => {});
+
 module.exports = router;
